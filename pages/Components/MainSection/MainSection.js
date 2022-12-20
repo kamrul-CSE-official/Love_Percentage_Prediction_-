@@ -67,14 +67,14 @@ const MainSection = () => {
           <div className={styles.inputFilds}>
             {count != null && (
               <div className={styles.report} style={{ wordWrap: "break-word" }}>
-                <h6 style={{ color: "green" }}>{`${yourName.slice(
+                <h5 style={{ color: "black" }}>{`${yourName.slice(
                   0,
                   19
-                )}..🍁 `}</h6>
-                <h6 style={{ color: "red" }}>{` ${belovedName.slice(
+                )}..🍁 `}</h5>
+                <h5 style={{ color: "orange" }}>{` ${belovedName.slice(
                   0,
                   19
-                )}..☘️`}</h6>
+                )}..☘️`}</h5>
 
                 <br />
                 <p style={{ wordWrap: "break-word" }}>{condition}</p>
