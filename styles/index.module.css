@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@400;600;700&display=swap");
+
+.parentSection {
+  font-family: "Caveat", cursive;
+  font-family: "Dancing Script", cursive;
+
+  background-image: url("../public/Images/Background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
