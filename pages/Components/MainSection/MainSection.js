@@ -67,24 +67,16 @@ const MainSection = () => {
           <div className={styles.inputFilds}>
             {count != null && (
               <div className={styles.report} style={{ wordWrap: "break-word" }}>
-                <h5>
-                  <small
-                    className={styles.names}
-                    style={{
-                      color: "green",
-                      fontSize: "1.5em",
-                      wordWrap: "break-word",
-                    }}
-                  >{`${yourName} ☘️`}</small>
-                  &{" "}
-                  <small
-                    style={{
-                      color: "red",
-                      fontSize: "1.5em",
-                      wordWrap: "break-word",
-                    }}
-                  >{` ${belovedName} 🍁`}</small>
-                </h5>
+                <h6 style={{ color: "green" }}>{`${yourName.slice(
+                  0,
+                  19
+                )}..🍁 `}</h6>
+                <h6 style={{ color: "red" }}>{` ${belovedName.slice(
+                  0,
+                  19
+                )}..☘️`}</h6>
+
+                <br />
                 <p style={{ wordWrap: "break-word" }}>{condition}</p>
                 <br />
                 <div>
@@ -112,6 +104,7 @@ const MainSection = () => {
                     setCount(null);
                     setBelovedName(null);
                     setYourName(null);
+                    setCondition(null);
                   }}
                   className={styles.clickBtn}
                 >
